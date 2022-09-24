@@ -64,15 +64,32 @@ CMAKE_BINARY_DIR = /home/esilff/Git/FireEmblemGL/build
 
 # The main recursive "all" target.
 all: CMakeFiles/FireEmblemGL.dir/all
+all: dto/character/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: dto/character/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/FireEmblemGL.dir/clean
+clean: dto/character/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory dto/character
+
+# Recursive "all" directory target.
+dto/character/all: dto/character/CMakeFiles/character.dir/all
+.PHONY : dto/character/all
+
+# Recursive "preinstall" directory target.
+dto/character/preinstall:
+.PHONY : dto/character/preinstall
+
+# Recursive "clean" directory target.
+dto/character/clean: dto/character/CMakeFiles/character.dir/clean
+.PHONY : dto/character/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/FireEmblemGL.dir
@@ -99,6 +116,32 @@ FireEmblemGL: CMakeFiles/FireEmblemGL.dir/rule
 CMakeFiles/FireEmblemGL.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FireEmblemGL.dir/build.make CMakeFiles/FireEmblemGL.dir/clean
 .PHONY : CMakeFiles/FireEmblemGL.dir/clean
+
+#=============================================================================
+# Target rules for target dto/character/CMakeFiles/character.dir
+
+# All Build rule for target.
+dto/character/CMakeFiles/character.dir/all:
+	$(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/depend
+	$(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/esilff/Git/FireEmblemGL/build/CMakeFiles --progress-num=3,4 "Built target character"
+.PHONY : dto/character/CMakeFiles/character.dir/all
+
+# Build rule for subdir invocation for target.
+dto/character/CMakeFiles/character.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/esilff/Git/FireEmblemGL/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dto/character/CMakeFiles/character.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/esilff/Git/FireEmblemGL/build/CMakeFiles 0
+.PHONY : dto/character/CMakeFiles/character.dir/rule
+
+# Convenience name for target.
+character: dto/character/CMakeFiles/character.dir/rule
+.PHONY : character
+
+# clean rule for target.
+dto/character/CMakeFiles/character.dir/clean:
+	$(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/clean
+.PHONY : dto/character/CMakeFiles/character.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

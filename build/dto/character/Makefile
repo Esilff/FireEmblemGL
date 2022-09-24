@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/esilff/Git/FireEmblemGL/build/CMakeFiles /home/esilff/Git/FireEmblemGL/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/esilff/Git/FireEmblemGL/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/esilff/Git/FireEmblemGL/build/CMakeFiles /home/esilff/Git/FireEmblemGL/build/dto/character//CMakeFiles/progress.marks
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dto/character/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/esilff/Git/FireEmblemGL/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dto/character/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dto/character/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dto/character/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/esilff/Git/FireEmblemGL/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named FireEmblemGL
+# Convenience name for target.
+dto/character/CMakeFiles/character.dir/rule:
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dto/character/CMakeFiles/character.dir/rule
+.PHONY : dto/character/CMakeFiles/character.dir/rule
 
-# Build rule for target.
-FireEmblemGL: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FireEmblemGL
-.PHONY : FireEmblemGL
-
-# fast build rule for target.
-FireEmblemGL/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FireEmblemGL.dir/build.make CMakeFiles/FireEmblemGL.dir/build
-.PHONY : FireEmblemGL/fast
-
-#=============================================================================
-# Target rules for targets named character
-
-# Build rule for target.
-character: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 character
+# Convenience name for target.
+character: dto/character/CMakeFiles/character.dir/rule
 .PHONY : character
 
 # fast build rule for target.
 character/fast:
-	$(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/build
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/build
 .PHONY : character/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+character.o: character.cpp.o
+.PHONY : character.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FireEmblemGL.dir/build.make CMakeFiles/FireEmblemGL.dir/main.cpp.o
-.PHONY : main.cpp.o
+character.cpp.o:
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/character.cpp.o
+.PHONY : character.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+character.i: character.cpp.i
+.PHONY : character.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FireEmblemGL.dir/build.make CMakeFiles/FireEmblemGL.dir/main.cpp.i
-.PHONY : main.cpp.i
+character.cpp.i:
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/character.cpp.i
+.PHONY : character.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+character.s: character.cpp.s
+.PHONY : character.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FireEmblemGL.dir/build.make CMakeFiles/FireEmblemGL.dir/main.cpp.s
-.PHONY : main.cpp.s
+character.cpp.s:
+	cd /home/esilff/Git/FireEmblemGL/build && $(MAKE) $(MAKESILENT) -f dto/character/CMakeFiles/character.dir/build.make dto/character/CMakeFiles/character.dir/character.cpp.s
+.PHONY : character.cpp.s
 
 # Help Target
 help:
@@ -174,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... FireEmblemGL"
 	@echo "... character"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... character.o"
+	@echo "... character.i"
+	@echo "... character.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/esilff/Git/FireEmblemGL/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/FireEmblemGL.dir/main.cpp.o -o FireEmblemGL  /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 /usr/lib/x86_64-linux-gnu/libGL.so 
+/usr/bin/c++ CMakeFiles/FireEmblemGL.dir/main.cpp.o -o FireEmblemGL  /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 /usr/lib/x86_64-linux-gnu/libGL.so -l./dto/character 

@@ -2,7 +2,13 @@
 
 int main(void)
 {
-    GLFWwindow* window;
+   
+}
+
+//Keep for later
+
+int glfwMain() {
+     GLFWwindow* window;
 
     /* Initialize the library */
     if (!glfwInit())
