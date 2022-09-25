@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/esilff/Git/FireEmblemGL/src/main.cpp" "CMakeFiles/FireEmblemGL.dir/main.cpp.o" "gcc" "CMakeFiles/FireEmblemGL.dir/main.cpp.o.d"
+  "/home/esilff/Git/FireEmblemGL/src/character/character.cpp" "character/CMakeFiles/character.dir/character.cpp.o" "gcc" "character/CMakeFiles/character.dir/character.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/esilff/Git/FireEmblemGL/build/character/CMakeFiles/character.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

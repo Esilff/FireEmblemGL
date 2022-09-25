@@ -1,8 +1,12 @@
+#include <iostream>
 #include <GLFW/glfw3.h>
+#include "battleHelper.h"
+#include "unit.h"
 
 int main(void)
 {
-   
+    BattleHelper BattleHelper;
+    //std::cout << var << std::endl;
 }
 
 //Keep for later

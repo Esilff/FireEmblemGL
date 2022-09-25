@@ -94,6 +94,7 @@ FireEmblemGL: CMakeFiles/FireEmblemGL.dir/main.cpp.o
 FireEmblemGL: CMakeFiles/FireEmblemGL.dir/build.make
 FireEmblemGL: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 FireEmblemGL: /usr/lib/x86_64-linux-gnu/libGL.so
+FireEmblemGL: character/libcharacter.a
 FireEmblemGL: CMakeFiles/FireEmblemGL.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/esilff/Git/FireEmblemGL/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable FireEmblemGL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/FireEmblemGL.dir/link.txt --verbose=$(VERBOSE)

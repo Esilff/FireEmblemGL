@@ -10,8 +10,19 @@ find_package(OpenGL REQUIRED)
 target_link_libraries(${PROJECT_NAME} glfw ${GLFW_LIBRARIES})
 target_link_libraries(${PROJECT_NAME} OpenGL::GL)
 
-add_subdirectory(dto/character)
 
-target_link_libraries(${PROJECT_NAME} ./dto/character)
+add_subdirectory(BattleHelper)
 
-target_include_directories(${PROJECT_NAME} PRIVATE ./dto/character)
+target_include_directories(${PROJECT_NAME} PUBLIC BattleHelper)
+
+target_link_directories(${PROJECT_NAME} PRIVATE BattleHelper)
+
+target_link_libraries(${PROJECT_NAME} BattleHelper)
+
+add_subdirectory(Unit)
+
+target_include_directories(${PROJECT_NAME} PUBLIC Unit)
+
+target_link_directories(${PROJECT_NAME} PRIVATE Unit)
+
+target_link_libraries(${PROJECT_NAME} Unit)
